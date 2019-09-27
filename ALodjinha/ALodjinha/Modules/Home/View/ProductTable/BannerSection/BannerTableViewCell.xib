@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BannerTableViewCell" rowHeight="180" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="Lodjinha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBl-AN-22T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="M3i-Vy-QhT">
+                                <rect key="frame" x="0.0" y="136" width="320" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Vca-wA-xhb"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7x-ZN-ue6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-7x-jJX">
+                                <rect key="frame" x="140.5" y="99" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="XmP-zh-U8F"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M3i-Vy-QhT" firstAttribute="top" secondItem="h7x-ZN-ue6" secondAttribute="bottom" id="0vy-of-y1c"/>
+                            <constraint firstItem="h7x-ZN-ue6" firstAttribute="leading" secondItem="ZBl-AN-22T" secondAttribute="leading" id="B0x-UL-obD"/>
+                            <constraint firstItem="Wwo-7x-jJX" firstAttribute="centerX" secondItem="ZBl-AN-22T" secondAttribute="centerX" id="B8o-DR-Cqh"/>
+                            <constraint firstAttribute="trailing" secondItem="h7x-ZN-ue6" secondAttribute="trailing" id="NPw-iX-I0g"/>
+                            <constraint firstAttribute="bottom" secondItem="M3i-Vy-QhT" secondAttribute="bottom" id="bfq-zN-C96"/>
+                            <constraint firstAttribute="height" constant="140" id="dM0-qc-ksv"/>
+                            <constraint firstItem="M3i-Vy-QhT" firstAttribute="top" secondItem="Wwo-7x-jJX" secondAttribute="bottom" id="ejF-fI-PmK"/>
+                            <constraint firstItem="h7x-ZN-ue6" firstAttribute="top" secondItem="ZBl-AN-22T" secondAttribute="top" id="eo4-O8-q9r"/>
+                            <constraint firstItem="M3i-Vy-QhT" firstAttribute="top" secondItem="h7x-ZN-ue6" secondAttribute="bottom" id="ghQ-Ci-gaL"/>
+                            <constraint firstItem="M3i-Vy-QhT" firstAttribute="leading" secondItem="ZBl-AN-22T" secondAttribute="leading" id="jVV-1Q-RJu"/>
+                            <constraint firstAttribute="trailing" secondItem="M3i-Vy-QhT" secondAttribute="trailing" id="w5H-GY-cnu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZBl-AN-22T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7G8-aG-ZbP"/>
+                    <constraint firstAttribute="trailing" secondItem="ZBl-AN-22T" secondAttribute="trailing" id="FlC-S3-lby"/>
+                    <constraint firstItem="ZBl-AN-22T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IM0-Tw-6Du"/>
+                    <constraint firstAttribute="bottom" secondItem="ZBl-AN-22T" secondAttribute="bottom" constant="-0.5" id="Wdh-fw-ORW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pageControl" destination="Wwo-7x-jJX" id="Y94-cj-hQW"/>
+                <outlet property="scrollView" destination="h7x-ZN-ue6" id="JQo-XA-a1o"/>
+            </connections>
+            <point key="canvasLocation" x="-158" y="61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shadow_bottom" width="0.5" height="7"/>
+    </resources>
+</document>

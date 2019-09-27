@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AboutView.swift
 //  ALodjinha
 //
 //  Created by Thiery Gastaldi on 24/09/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class AboutView: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.titleLabel.font = UIFont.pacificFontWith(size: 52)
     }
-
-
 }
-
